@@ -1,0 +1,10 @@
+'''Read the input as two limits and Print the output as Palindrome count between the two limits
+1: Input : 1 10 Output : 9
+  2: Input : 1 100 Output : 18'''
+l1=int(input("enter 1st limit"))
+l2=int(input("enter 2nd limit"))
+c=0
+for i in range(l1,l2+1):
+    if(str(i)==str(i)[::-1]):
+        c += 1
+print(c) 
