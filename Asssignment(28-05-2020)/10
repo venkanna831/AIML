@@ -1,0 +1,18 @@
+''' Accept a number as an input and check whether the given number is palindrome or not
+if it is a palindrome number print the number on the screen
+if it is not a palindrome number reverse that number and add it to previous number 
+repeat this until will get a palindrome number and print that palindrome number on the screen
+input: 127
+output: 848
+'''
+n=int(input("enter a number"))
+r=0
+rev=0
+s=0
+if(str(n)==str(n)[::-1]):
+    print("palindrome")
+else:
+    rev=int(str(n)[::-1])
+    s = n+rev
+    print(s)
+        
