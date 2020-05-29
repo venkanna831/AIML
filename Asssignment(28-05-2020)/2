@@ -1,0 +1,14 @@
+'''count the no.of pairs of a in the given string(Infosys InfyTQ)
+    string →  "abbaaccbbaaa"
+   output →  2'''
+s=input("enter string")
+s=s.lower()
+count=0
+i=0
+while i<(len(s)-1):
+    if(s[i]=='a'):
+        if(s[i+1]=='a'):
+            count += 1
+            i+=1
+    i+=1
+print("no: of pairs of a:",count)
