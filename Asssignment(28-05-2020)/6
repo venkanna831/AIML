@@ -1,0 +1,11 @@
+'''Accept input as a string and display sum of digits as the output 
+input:Appli123cation456 
+Output: 21'''
+s=input("enter string:")
+sum=0
+for i in range(0,len(s)):
+    if(s[i]>='0' and s[i]<='9'):
+        sum += int(s[i])
+    else:
+        continue
+print(sum)
