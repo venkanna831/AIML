@@ -1,0 +1,24 @@
+#Accept a string from the user and count no.of vowels,consonants and special characters
+str=input("enter a string:")
+str=str.lower()
+vowel=0
+cons=0
+space=0
+digit=0
+spl=0
+for i in range(0,len(str)):
+    if(str[i]=='a' or str[i]=='e' or str[i]=='i' or str[i]=='o' or str[i]=='u'):
+        vowel += 1
+    elif(str[i]>'a' and str[i]<'z'):
+        cons += 1
+    elif(str[i]==' '):
+        space += 1
+    elif(str[i]>='0' and str[i]<='9'):
+        digit += 1
+    else:
+        spl += 1
+print("number of vowels:",vowel)
+print("number of consonants:",cons)
+print("number of whitespaces:",space)
+print("number of special characters:",spl)
+print("number of digits:",digit)
