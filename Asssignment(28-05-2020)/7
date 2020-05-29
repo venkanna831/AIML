@@ -1,0 +1,24 @@
+'''Write a Python program to find the median of three values.
+Expected Output:
+Input first number: 26                                            
+Input second number: 15                                                
+Input third number: 29                                                  
+The median is 26'''
+a=input("enter first number")
+b=input("enter second number")
+c=input("enter third number")
+if a>b:
+    if a<c:
+        med=a
+    elif b>c:
+        med=b
+    else:
+        med=c
+else:
+    if a>c:
+        med=a
+    elif b<c:
+        med=b
+    else:
+        med=c
+print("the median is =",med)
